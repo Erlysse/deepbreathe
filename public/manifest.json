@@ -6,19 +6,19 @@
   "scope": "/",
   "display": "standalone",
   "display_override": ["fullscreen", "minimal-ui"],
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#02040a",
+  "theme_color": "#02040a",
   "orientation": "portrait",
   "categories": ["health", "lifestyle", "medical"],
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/1137/1137583.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/2739/2739401.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/1137/1137583.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/2739/2739401.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
