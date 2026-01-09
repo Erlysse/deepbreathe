@@ -12,16 +12,16 @@
   "categories": ["health", "lifestyle", "medical"],
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/3504/3504853.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/4383/4383852.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/3504/3504853.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/4383/4383852.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ]
 }
