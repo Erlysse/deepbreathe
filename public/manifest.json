@@ -1,7 +1,7 @@
 {
   "name": "De(e)p Breathe",
   "short_name": "DeepBreathe",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "display_override": ["fullscreen", "minimal-ui"],
   "background_color": "#000000",
