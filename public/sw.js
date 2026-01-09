@@ -1,9 +1,10 @@
 
-const CACHE_NAME = 'deep-breathe-v19';
+const CACHE_NAME = 'deep-breathe-v20';
 const URLS_TO_CACHE = [
   '/',
   '/index.html',
-  '/manifest.json?v=19',
+  '/manifest.json?v=20',
+  '/icon.svg',
   'https://cdn.tailwindcss.com',
   'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Playfair+Display:ital@0;1&display=swap'
 ];
