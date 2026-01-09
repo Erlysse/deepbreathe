@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'deep-breathe-v4';
+const CACHE_NAME = 'deep-breathe-v5';
 const URLS_TO_CACHE = [
   '/',
   '/index.html',
@@ -43,7 +43,6 @@ self.addEventListener('fetch', (event) => {
             }
             const responseToCache = response.clone();
             caches.open(CACHE_NAME).then((cache) => {
-                // Cache http requests
                 if (event.request.url.startsWith('http')) {
                    cache.put(event.request, responseToCache);
                 }
