@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# De(e)p Breathe
 
-# Run and deploy your AI Studio app
+**De(e)p Breathe** is an immersive, interactive breathing application designed to help users relax through generative visuals and audio. Built with React and Web Audio API, it creates a unique atmospheric experience every session.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+*   **Generative Audio Engine:** Real-time synthesis of ocean sounds, pink noise, and binaural beats using the Web Audio API. No looped MP3s.
+*   **Visual Guidance:** Interactive sea creatures (Jellyfish, Turtle, Manta Ray) that breathe with you.
+*   **Immersive Atmosphere:** Dynamic particle systems, swaying seaweed, and lighting effects that react to breathing phases.
+*   **PWA Support:** Installable on iOS and Android with full offline support.
+*   **Customizable:** Adjustable breathing rhythm, themes (Midnight, Disco, Abyss), and soundscapes.
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+*   **Framework:** React 18 (Vite)
+*   **Styling:** Tailwind CSS
+*   **Icons:** Lucide React
+*   **Language:** TypeScript
 
+## Installation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This project is designed to be deployed on Vercel or Netlify.
+
+1.  Clone the repository.
+2.  Run `npm install`.
+3.  Run `npm run dev` to start the local server.

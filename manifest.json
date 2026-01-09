@@ -1,15 +1,16 @@
 {
   "name": "De(e)p Breathe",
   "short_name": "DeepBreathe",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#0f172a",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "orientation": "portrait",
   "categories": ["health", "lifestyle", "medical"],
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/3655/3655610.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/3065/3065683.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
