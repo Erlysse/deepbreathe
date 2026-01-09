@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>De(e)p Breathe</title>
+    <meta name="description" content="Immersive breathing exercises" />
+    
+    <!-- PWA Settings -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3655/3655610.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'sway': 'sway 8s ease-in-out infinite',
+              'swim': 'swim 20s linear infinite',
+              'bubble-rise': 'rise-wobble 3s ease-in infinite',
+              'glimmer': 'glimmer 4s ease-in-out infinite',
+              'swim-fast': 'swim-right 15s linear infinite',
+              'drift-pass': 'drift-pass 30s linear infinite',
+              'sub-pass': 'sub-pass 60s linear infinite',
+              'eel-swim': 'eel-swim 40s linear infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
+              sway: { '0%, 100%': { transform: 'rotate(-5deg)' }, '50%': { transform: 'rotate(5deg)' } },
+              'rise-wobble': {
+                '0%': { transform: 'translate(0, 0) scale(0.5)', opacity: '0' },
+                '10%': { opacity: '0.8' },
+                '25%': { transform: 'translate(4px, -40px) scale(0.7)' },
+                '50%': { transform: 'translate(-3px, -80px) scale(0.9)' },
+                '100%': { transform: 'translate(-1px, -180px) scale(1.3)', opacity: '0' },
+              },
+              'swim-right': {
+                '0%': { transform: 'translateX(-20vw) translateY(0)' },
+                '50%': { transform: 'translateX(50vw) translateY(0)' },
+                '100%': { transform: 'translateX(120vw) translateY(0)' },
+              },
+              'drift-pass': { '0%': { transform: 'translateX(-50vw)' }, '100%': { transform: 'translateX(150vw)' } },
+              glimmer: { '0%, 100%': { opacity: '0.2', transform: 'scale(0.8)' }, '50%': { opacity: '0.8', transform: 'scale(1.2)' } },
+              'sub-pass': { '0%': { transform: 'translateX(-30vw) scale(0.6)' }, '100%': { transform: 'translateX(130vw) scale(0.6)' } },
+              'eel-swim': { '0%': { transform: 'translateX(150vw)' }, '100%': { transform: 'translateX(-50vw)' } }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body { margin: 0; overflow: hidden; background-color: #0f172a; overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; }
+      .glass-panel { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1); }
+      .bubble { position: absolute; background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.95), rgba(200, 255, 255, 0.4)); border-radius: 50%; pointer-events: none; z-index: 20; }
+      #root:empty::before { content: "Loading..."; display: flex; justify-content: center; align-items: center; height: 100vh; color: rgba(255, 255, 255, 0.5); font-family: 'Montserrat', sans-serif; }
+      
+      /* Custom Scrollbar for Settings */
+      .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.02); }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 4px; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(registration => console.log('SW registered'))
+            .catch(err => console.log('SW failed', err));
+        });
+      }
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

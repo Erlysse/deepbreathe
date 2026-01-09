@@ -1,0 +1,2 @@
+export interface GroundingChunk {
+  web?: {
