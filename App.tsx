@@ -837,6 +837,40 @@ const App: React.FC = () => {
 
    useEffect(() => { localStorage.setItem('deep_breathe_prefs', JSON.stringify(prefs)); }, [prefs]);
 
+   // SCREEN WAKE LOCK
+   useEffect(() => {
+    let wakeLock: any = null;
+
+    const requestWakeLock = async () => {
+      try {
+        if ('wakeLock' in navigator) {
+          wakeLock = await (navigator as any).wakeLock.request('screen');
+        }
+      } catch (err: any) {
+        console.error(`${err.name}, ${err.message}`);
+      }
+    };
+
+    const handleVisibilityChange = () => {
+      if (wakeLock !== null && document.visibilityState === 'visible' && isPlaying) {
+        requestWakeLock();
+      }
+    };
+
+    if (isPlaying) {
+      requestWakeLock();
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+    }
+
+    return () => {
+      if (wakeLock) {
+        wakeLock.release().catch(() => {});
+        wakeLock = null;
+      }
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+   }, [isPlaying]);
+
    // STRICT AUDIO SYNC
    useEffect(() => {
        if(isPlaying) {
