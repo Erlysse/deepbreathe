@@ -12,15 +12,15 @@
   "categories": ["health", "lifestyle", "medical"],
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/2665/2665178.png?v=18",
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzAyMDQwYSIvPjxwYXRoIGQ9Ik0gMTU2IDI1MCBDIDE1NiAxMzAgMzU2IDEzMCAzNTYgMjUwIEMgMzU2IDI3MCAxNTYgMjcwIDE1NiIDI1MCIgZmlsbD0icmdiYSgyNTEsMjA3LDIzMiwwLjEpIiBzdHJva2U9IiNmYmNmZTgiIHN0cm9rZS13aWR0aD0iMTAiLz48cGF0aCBkPSJNIDIwMCAyNTAgUSAxODAgMzUwIDIwMCA0MjAiIHN0cm9rZT0iI2ZiY2ZlOCIgc3Ryb2tlLXdpZHRoPSIyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTSAyNTYgMjcwIFEgMjU2IDM5MCAyNTYgNDUwIiBzdHJva2U9IiNmYmNmZTgiIHN0cm9rZS13aWR0aD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0gMzEyIDI1MCBRIDMzMiAzNTAgMzEyIDQyMCIgc3Ryb2tlPSIjZmJjZmU4IiBzdHJva2Utd2lkdGg9IjIwIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4=",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/2665/2665178.png?v=18",
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzAyMDQwYSIvPjxwYXRoIGQ9Ik0gMTU2IDI1MCBDIDE1NiAxMzAgMzU2IDEzMCAzNTYgMjUwIEMgMzU2IDI3MCAxNTYgMjcwIDE1NiIDI1MCIgZmlsbD0icmdiYSgyNTEsMjA3LDIzMiwwLjEpIiBzdHJva2U9IiNmYmNmZTgiIHN0cm9rZS13aWR0aD0iMTAiLz48cGF0aCBkPSJNIDIwMCAyNTAgUSAxODAgMzUwIDIwMCA0MjAiIHN0cm9rZT0iI2ZiY2ZlOCIgc3Ryb2tlLXdpZHRoPSIyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTSAyNTYgMjcwIFEgMjU2IDM5MCAyNTYgNDUwIiBzdHJva2U9IiNmYmNmZTgiIHN0cm9rZS13aWR0aD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0gMzEyIDI1MCBRIDMzMiAzNTAgMzEyIDQyMCIgc3Ryb2tlPSIjZmJjZmU4IiBzdHJva2Utd2lkdGg9IjIwIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4=",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ]
