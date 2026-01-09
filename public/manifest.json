@@ -1,6 +1,7 @@
 {
   "name": "De(e)p Breathe",
   "short_name": "DeepBreathe",
+  "id": "/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -11,7 +12,13 @@
   "categories": ["health", "lifestyle", "medical"],
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/3065/3065683.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/3504/3504847.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3504/3504847.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
