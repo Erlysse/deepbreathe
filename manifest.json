@@ -3,14 +3,13 @@
   "short_name": "DeepBreathe",
   "start_url": "/",
   "display": "standalone",
-  "display_override": ["fullscreen", "minimal-ui"],
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
   "orientation": "portrait",
   "categories": ["health", "lifestyle", "medical"],
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/3065/3065683.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/3655/3655610.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
