@@ -1,12 +1,12 @@
 
-const CACHE_NAME = 'deep-breathe-v7';
+const CACHE_NAME = 'deep-breathe-v8';
 const URLS_TO_CACHE = [
   '/',
   '/index.html',
   '/manifest.json',
   'https://cdn.tailwindcss.com',
   'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Playfair+Display:ital@0;1&display=swap',
-  'https://cdn-icons-png.flaticon.com/512/3504/3504847.png'
+  'https://cdn-icons-png.flaticon.com/512/3065/3065683.png'
 ];
 
 self.addEventListener('install', (event) => {
